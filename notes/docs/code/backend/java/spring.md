@@ -1021,7 +1021,7 @@ public void test1() {
 - Aspect（切面）：切点+通知
 - Weaving（织入）：将切点与通知结合的过程
 
-![](../../../../appends/img/AOP.png)
+![](../../../../appends/img/setJavaHomeOnMac.png)
 
 ### AOP 快速入门(XML)
 #### before/after 前置/后置通知

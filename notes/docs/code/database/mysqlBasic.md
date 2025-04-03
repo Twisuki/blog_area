@@ -1046,7 +1046,7 @@ ON d.`deptno`=z.`deptno`;
 ## JDBC
 >Java 官方提供的一套接口(规范)名字叫 JDBC(Java Database Connectivity)，不同的数据库厂商实现这套接口，以实现类的形式呈现，这些实现类也被我们称作做驱动。这套协作机制使得 Java 可以通过 JDBC 可以连接非常多的数据库，厂商也在没有泄漏源代码的同时推广了自己的数据库，程序员只需要了解接口规范即可实现操作其他不同的数据库。
 
-![JDBCPrinciple](../../../appends/img/JDBCPrinciple.jpg)
+![JDBCPrinciple](../../../appends/img/setJavaHomeOnMac.jpg)
 程序员做的就是编写实现左边的 `Java Application` ，同时调用 `JDBC` 对数据库操作。
 
 

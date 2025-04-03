@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/code/backend/java/setJavaHomeOnMac.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "setJavaHomeOnMac"
+              "title": "README"
             }
           }
         ]
@@ -148,6 +148,20 @@
   },
   "active": "3324e67c7d162199",
   "lastOpenFiles": [
+    "docs/code/backend/java/setJavaHomeOnMac.md",
+    "appends/img/writeYourFirstVuePage2.png",
+    "appends/img/writeYourFirstVuePage1.png",
+    "appends/img/swagger1.png",
+    "appends/img/springEnhance.png",
+    "appends/img/responseServletTest.png",
+    "appends/img/requestForward.png",
+    "appends/img/redis_findById_redisClient.png",
+    "appends/img/redis_findById_console2.png",
+    "appends/img/redis_findById_console.png",
+    "appends/img/redis_findAll_redisCient.png",
+    "appends/img/setJavaHomeOnMac.yaml",
+    "appends/css",
+    "README.md",
     "docs/code/backend/java/mybatis-plus-service-pattern-comparison.md",
     "docs/code/backend/java/valueReferencePassing.md",
     "docs/code/backend/java/openFeignBasic.md",
@@ -172,27 +186,13 @@
     "docs/code/backend/java/javaWeb.md",
     "docs/code/knowledge/regularExpression.md",
     "docs/code/database/mysqlBasic.md",
-    "docs/code/server/setDoscifyAndGitOnCloud.md",
-    "docs/code/server/autoUpdateByGitHook.md",
-    "appends/img/rabbitMQ.png",
-    "appends/img/cookieSession-1.png",
-    "appends/img/cookieSession.png",
     "docs/code/backend/java/未命名",
-    "appends/img/image-20211021162416525.png",
-    "appends/img/image-20211021160145072.png",
     "Chats",
-    "appends/img/springEnhance.png",
-    "appends/img/springEnhance-1.png",
-    "appends/img/springEnhance-1.png",
-    "appends/img/Pasted image 20241231102015.png",
-    "appends/img/Pasted image 20241231100337.png",
     "docs/code/environment",
-    "appends/img/application.yaml",
     "docs/code/server/linux常见服务配置.html",
     "docs/server/linux上的目录共享和磁盘分区和磁盘共享.html",
     "docs/ai/主要步骤，安装conda，创建一个新的虚拟环境，一切操作都在这个虚拟环境中做，这样可以很好的隔离开配",
     "docs/popularScience",
-    "docs/code/server",
-    "docs/code/database"
+    "docs/code/server"
   ]
 }

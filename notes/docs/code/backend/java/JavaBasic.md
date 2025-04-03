@@ -6636,7 +6636,7 @@ Set 判断两个对象是否相同不是使用\=\=运算符，而是根据 `equa
 			- 如果不同，则添加成功(数组上有元素了，会以链表的形式挂在后面)
 
 HashSet 的底层：
-![](../../../../appends/img/hashSetStruct.jpeg)
+![](../../../../appends/img/setJavaHomeOnMac.jpeg)
 
 ##### 基本操作
 `HashSetBasicOperate.java`
