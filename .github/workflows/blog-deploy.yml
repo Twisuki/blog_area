@@ -38,4 +38,4 @@ jobs:
 
       # 上传到OSS
       - name: 部署到阿里云OSS
-        run: ossutil cp -rf docs/.vuepress/dist/ oss://blog-area/ # 替换为你的bucket名称
+        run: ossutil cp -rf notes/.vuepress/dist/ oss://blog-area/ # 替换为你的bucket名称
