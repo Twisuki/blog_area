@@ -33,8 +33,8 @@ jobs:
         uses: manyuanrong/setup-ossutil@v2.0
         with:
           endpoint: oss-cn-hongkong.aliyuncs.com # 替换为你的OSS endpoint
-          access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          access-key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
 
       # 上传到OSS
       - name: 部署到阿里云OSS
