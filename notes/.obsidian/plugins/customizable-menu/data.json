@@ -1,0 +1,14 @@
+{
+  "menuCommands": [
+    {
+      "id": "editor:fold-all",
+      "name": "折叠所有标题和列表",
+      "icon": "lucide-minimize-2",
+      "allowPreview": true,
+      "allowProperties": true
+    }
+  ],
+  "hideTitles": [
+    ""
+  ]
+}

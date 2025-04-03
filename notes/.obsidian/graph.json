@@ -1,0 +1,22 @@
+{
+  "collapse-filter": false,
+  "search": "-file:TODO -file:_sidebar",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.625203450520833,
+  "repelStrength": 16.44287109375,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1.4419256882372393,
+  "close": true
+}

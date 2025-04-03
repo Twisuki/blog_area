@@ -1,0 +1,22 @@
+{
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "docs/post",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "appends/img",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showInlineTitle": false,
+  "readableLineLength": false,
+  "vimMode": false,
+  "strictLineBreaks": true,
+  "livePreview": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "spellcheck": false
+}
