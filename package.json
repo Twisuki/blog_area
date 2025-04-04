@@ -5,9 +5,9 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress-vite build notes",
+    "build": "vuepress-vite build notes",
     "docs:clean-dev": "vuepress-vite dev notes --clean-cache",
-    "docs:dev": "vuepress-vite dev notes",
+    "dev": "vuepress-vite dev notes",
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {

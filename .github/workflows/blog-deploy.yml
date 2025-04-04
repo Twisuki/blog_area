@@ -22,10 +22,9 @@ jobs:
           node-version: "23" # 使用Node.js 16版本，可根据你的项目需要调整
           cache: "npm" # 缓存npm依赖以加快构建速度
 
-      # 安装依赖并构建
-      - name: 安装依赖并构建
+      - name: 构建HTML
         run: |
-          npm install
+          npm i
           npm run build
 
       - name: 打印当前工作目录
