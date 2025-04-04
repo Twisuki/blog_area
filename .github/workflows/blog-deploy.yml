@@ -24,7 +24,8 @@ jobs:
 
       - name: 构建HTML
         run: |
-          npm i
+          npm install
+          npm install vuepress-theme-hope --save-dev # 安装主题
           npm run build
 
       - name: 打印当前工作目录
