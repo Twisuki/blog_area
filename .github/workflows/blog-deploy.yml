@@ -1,14 +1,13 @@
 name: 构建并部署到阿里云OSS
 
-# 触发条件：每次推送代码时
 on:
   push:
     branches:
-      - main # 你的主分支名称，如果不是main，请修改为你实际使用的分支名
+      - main
 
 jobs:
   build-and-deploy:
-    name: 构建Vuepress并部署到OSS
+    name: 构建VuePress并部署到OSS
     runs-on: ubuntu-latest
     steps:
       # 检出代码
@@ -19,29 +18,32 @@ jobs:
       - name: 设置Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "23" # 使用Node.js 16版本，可根据你的项目需要调整
-          cache: "npm" # 缓存npm依赖以加快构建速度
+          node-version: "16" # 使用稳定的 Node.js 版本
+          cache: "npm"
 
-      - name: 构建HTML
+      # 安装依赖
+      - name: 安装依赖
         run: |
-          npm install
-          npm install vuepress-theme-hope --save-dev # 安装主题
-          npm run build
+          npm ci
+          npm install vuepress-theme-hope --save-dev
 
-      - name: 打印当前工作目录
-        run: pwd
+      # 构建VuePress
+      - name: 构建VuePress
+        run: npm run build
+        working-directory: ./notes # 确保在正确的目录下运行
 
-      - name: 打印当前目录下的文件
-        run: ls -al
+      # 打印构建目录内容
+      - name: 打印构建目录内容
+        run: ls -al ./notes/.vuepress/dist
 
       # 配置OSS工具
       - name: 设置阿里云OSS工具
         uses: manyuanrong/setup-ossutil@v2.0
         with:
-          endpoint: oss-cn-hongkong.aliyuncs.com # 替换为你的OSS endpoint
+          endpoint: oss-cn-hongkong.aliyuncs.com
           access-key-id: ${{ secrets.ACCESS_KEY_ID }}
           access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
 
       # 上传到OSS
       - name: 部署到阿里云OSS
-        run: ossutil cp -rf /notes/docs/.vuepress/dist/ oss://blog-area/ # 替换为你的bucket名称
+        run: ossutil cp -rf ./notes/.vuepress/dist/ oss://blog-area/
