@@ -28,6 +28,12 @@ jobs:
           npm install
           npm run docs:build
 
+      - name: 打印当前工作目录
+        run: pwd
+
+      - name: 打印当前目录下的文件
+        run: ls -al
+
       # 配置OSS工具
       - name: 设置阿里云OSS工具
         uses: manyuanrong/setup-ossutil@v2.0
@@ -38,4 +44,4 @@ jobs:
 
       # 上传到OSS
       - name: 部署到阿里云OSS
-        run: ossutil cp -rf notes/docs/.vuepress/dist/ oss://blog-area/ # 替换为你的bucket名称
+        run: ossutil cp -rf /notes/docs/.vuepress/dist/ oss://blog-area/ # 替换为你的bucket名称
